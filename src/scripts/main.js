@@ -17,7 +17,7 @@ function tr(element) {
     const span = li.querySelector('span');
 
     if (!ul) {
-      return;
+      continue;
     }
 
     span.addEventListener('click', () => {

@@ -16,6 +16,10 @@ function tr(element) {
     const ul = li.querySelector('ul');
     const span = li.querySelector('span');
 
+    if (!ul) {
+      return;
+    }
+
     span.addEventListener('click', () => {
       if (window.getComputedStyle(ul).display === 'block') {
         ul.style.display = 'none';
